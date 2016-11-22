@@ -5,14 +5,15 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:codeeditor="clr-namespace:Gemini.Modules.CodeEditor.Controls;assembly=Gemini.Modules.CodeEditor"
              xmlns:helix="http://helix-toolkit.org/wpf"
-             mc:Ignorable="d" >
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
 	<Grid>
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition Width="*" />
 			<ColumnDefinition Width="Auto" />
 			<ColumnDefinition Width="*" />
 		</Grid.ColumnDefinitions>
-		<Border Grid.Column="0" Background="White" >
+		<Border Grid.Column="0" Background="White">
 			<Viewport3D>
 				<Viewport3D.Camera>
 					<PerspectiveCamera Position="{Binding CameraPosition, FallbackValue='6 5 4'}" LookDirection="-6 -5 -4"
@@ -34,7 +35,7 @@
 				</helix:HelixVisual3D>
 			</Viewport3D>
 		</Border>
-		<GridSplitter Grid.Column="1" Width="4" ResizeBehavior="PreviousAndNext" />
+		<GridSplitter Grid.Column="1" Width="4" />
 		<codeeditor:CodeEditor x:Name="CodeEditor" Grid.Column="2" SyntaxHighlighting="C#" />
 	</Grid>
 </UserControl>

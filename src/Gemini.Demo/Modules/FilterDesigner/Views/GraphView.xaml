@@ -7,9 +7,7 @@
              xmlns:local="clr-namespace:Gemini.Modules.GraphEditor.Controls;assembly=Gemini.Modules.GraphEditor"
              xmlns:vm="clr-namespace:Gemini.Demo.Modules.FilterDesigner.ViewModels"
              mc:Ignorable="d" 
-             xmlns:dd="clr-namespace:Gemini.Demo.Modules.FilterDesigner.Design"
              d:DesignHeight="500" d:DesignWidth="700"
-             
 			 d:DataContext="{d:DesignInstance dd:DesignTimeGraphViewModel, IsDesignTimeCreatable=True}"
 			 Background="WhiteSmoke" Focusable="True">
 	<UserControl.Resources>
